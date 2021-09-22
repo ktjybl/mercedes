@@ -1,4 +1,4 @@
-const lists=document.querySelector('.feature-sub');
+const lists=document.querySelectorAll('.feature-sub');
 const btns=document.querySelectorAll('.feature__link');
 
 btns.forEach((btnItem, index)=>{
@@ -9,9 +9,9 @@ btns.forEach((btnItem, index)=>{
        btnItem.classList.add('feature__link_active')
         
       lists.forEach((listItem)=>{
-         listsItem.classList.add('hidden')
+         listItem.classList.add('hidden')
        })
-       listItem[index].classList.remove('hidden')
+       lists[index].classList.remove('hidden')
     })
 })
 
